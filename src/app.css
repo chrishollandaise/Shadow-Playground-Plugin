@@ -1,0 +1,54 @@
+@import "@penpot/plugin-styles/styles.css";
+
+[data-theme="light"] {
+  ::selection {
+    background-color: var(--da-secondary);
+    color: var(--lb-primary);
+  }
+
+  .icon-label svg {
+    stroke: var(--lf-secondary);
+  }
+
+  input[type="range"] {
+    accent-color: var(--la-primary);
+  }
+
+  #light {
+    stroke: var(--la-tertiary);
+  }
+
+  #preview-wrapper {
+    background-color: var(--lb-quaternary);
+  }
+
+  #preview.selected::before {
+    border: 1px solid var(--la-tertiary);
+  }
+}
+
+[data-theme="dark"] {
+  ::selection {
+    background-color: var(--success-500);
+  }
+
+  .icon-label svg {
+    stroke: var(--df-secondary);
+  }
+
+  input[type="range"] {
+    accent-color: var(--da-primary);
+  }
+
+  #light {
+    stroke: var(--da-primary);
+  }
+
+  #preview-wrapper {
+    background-color: var(--db-quaternary);
+  }
+
+  #preview.selected::before {
+    border: 1px solid var(--da-primary);
+  }
+}
